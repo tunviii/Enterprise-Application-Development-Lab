@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student Details</title>
+    </head>
+    <body>
+        <script>
+            let students = [];
+
+function addStudent(id, name, age, course, marks) {
+  students.push({ id, name, age, course, marks });
+}
+
+addStudent(1, "Alice", 20, "CS", 85);
+addStudent(2, "Bob", 22, "Math", 90);
+
+console.log("All Students:", students);
+
+function displayStudents() {
+  students.forEach(student => {
+    console.log(
+      student.name + " - " +
+      student.course + " - " +
+      student.marks
+    );
+  });
+}
+
+displayStudents();
+
+        </script>
+    </body>
+</html>

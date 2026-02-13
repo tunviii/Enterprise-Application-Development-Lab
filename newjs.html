@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+var oldVariable="I am var";
+let userName="Alice", score=100, age=25, isStudent=true, emptyValue=null, notAssigned,
+    bigNumber=12345678901234567890n, uniqueId=Symbol("id"),
+    person={name:userName,age}, colors=["Red","Green","Blue"];
+const country="USA";
+
+function greet(){console.log("Hello from function!")} 
+greet();
+
+console.log("Name:",userName,"Country:",country,"Score:",score,person,colors);
+alert("Welcome "+userName+" from "+country);
+
+userName="Bob"; score=200;
+console.log("Updated:",userName,score);
+
+{let blockScoped="Inside block"; var notBlockScoped="var ignores block";
+ console.log(blockScoped,notBlockScoped);}
+
+console.log(notBlockScoped);
+
+function testScope(){let localVar="I am local"; console.log(localVar);}
+testScope();
+
+const showGlobal=()=>console.log(oldVariable,country);
+showGlobal();
+</script>
+</body>
+</html>
