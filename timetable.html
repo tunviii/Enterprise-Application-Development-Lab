@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CBIT Timetable</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      background-color: #f2f2f2;
+    }
+
+    .header {
+      background: linear-gradient(to right, #cbb6d6, #8fb6d9);
+      text-align: center;
+      padding: 20px;
+      border: 2px solid black;
+      margin-bottom: 20px;
+    }
+
+    table {
+      background-color: white;
+      text-align: center;
+    }
+
+    th, td {
+      border: 1px solid black !important;
+      vertical-align: middle;
+    }
+
+    .lunch {
+      letter-spacing: 3px;
+      font-weight: bold;
+    }
+
+    .highlight {
+      background: linear-gradient(to right, #cbb6d6, #8fb6d9);
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- Header -->
+  <div class="header">
+    <h4 class="fw-bold">CHAITANYA BHARATHI INSTITUTE OF TECHNOLOGY</h4>
+    <p class="mb-1">Department of Information Technology</p>
+    <p><strong>Effective Date:</strong> 01-03-2026</p>
+  </div>
+
+  <!-- Timetable -->
+  <table class="table table-bordered">
+    <thead class="table-light">
+      <tr>
+        <th>Day</th>
+        <th>I<br>9:10-10:10</th>
+        <th>II<br>10:10-11:10</th>
+        <th>III<br>11:15-12:15</th>
+        <th>LUNCH<br>12:15-1:00</th>
+        <th>IV<br>1:00-2:00</th>
+        <th>V<br>2:00-3:00</th>
+        <th>VI<br>3:05-4:05</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <th>MONDAY</th>
+        <td>PE-I</td>
+        <td>PQT</td>
+        <td>EAD</td>
+        <td rowspan="5" class="lunch">LUNCH BREAK</td>
+        <td>DBMS</td>
+        <td>EEA</td>
+        <td>LIBRARY</td>
+      </tr>
+
+      <tr>
+        <th>TUESDAY</th>
+        <td>DBMS</td>
+        <td>EEA</td>
+        <td>PQT</td>
+        <td colspan="3" class="highlight">DBMS LAB (B1)</td>
+      </tr>
+
+      <tr>
+        <th>WEDNESDAY</th>
+        <td>EAD</td>
+        <td>PE-I</td>
+        <td>LIBRARY</td>
+        <td>EEA</td>
+        <td>DBMS</td>
+        <td>PQT (T)</td>
+      </tr>
+
+      <tr>
+        <th>THURSDAY</th>
+        <td colspan="2" class="highlight">Mini Project-1</td>
+        <td>Library</td>
+        <td>PE-I</td>
+        <td>PQT</td>
+        <td>ES</td>
+      </tr>
+
+      <tr>
+        <th>FRIDAY</th>
+        <td>ES</td>
+        <td>EAD</td>
+        <td>MENTORING</td>
+        <td colspan="3" class="highlight">EAD LAB (B1)</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+</body>
+</html>
