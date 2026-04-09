@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Login Page</title>
+
+    <script>
+        function validateLogin() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username == "" || password == "") {
+                alert("Username and Password cannot be empty!");
+                return false;
+            }
+
+            if (username == "admin" && password == "1234") {
+                document.getElementById("message").innerHTML = 
+                "Login Successful!";
+                return false;
+            } else {
+                alert("Invalid Username or Password!");
+                return false;
+            }
+        }
+    </script>
+
+</head>
+<body>
+
+    <!-- Top Right Number -->
+    <p align="right"><b>160124737162</b></p>
+
+    <h1 align="center">Simple Login Page</h1>
+
+    <hr>
+
+    <form onsubmit="return validateLogin()">
+
+        <p>
+            Username:
+            <input type="text" id="username">
+        </p>
+
+        <p>
+            Password:
+            <input type="password" id="password">
+        </p>
+
+        <p>
+            <input type="submit" value="Login">
+            <input type="reset" value="Reset">
+        </p>
+
+    </form>
+
+    <h2 id="message"></h2>
+
+</body>
+</html>
