@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+</head>
+<body>
+
+    <!-- Top Right Number -->
+    <p align="right"><b>160124737162</b></p>
+
+    <h1 align="center">Student Registration Form</h1>
+
+    <hr>
+
+    <form>
+        <table align="center" cellpadding="8">
+
+            <tr>
+                <td>Full Name:</td>
+                <td><input type="text" name="fullname" size="40"></td>
+            </tr>
+
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email" size="40"></td>
+            </tr>
+
+            <tr>
+                <td>Mobile Number:</td>
+                <td><input type="tel" name="mobile" size="40"></td>
+            </tr>
+
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" name="gender" value="Male"> Male
+                    <input type="radio" name="gender" value="Female"> Female
+                </td>
+            </tr>
+
+            <tr>
+                <td>Date of Birth:</td>
+                <td>
+                    <select name="day">
+                        <option>DD</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+
+                    <select name="month">
+                        <option>MM</option>
+                        <option>Jan</option>
+                        <option>Feb</option>
+                        <option>Mar</option>
+                        <option>Apr</option>
+                    </select>
+
+                    <select name="year">
+                        <option>YYYY</option>
+                        <option>2000</option>
+                        <option>2001</option>
+                        <option>2002</option>
+                        <option>2003</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Address:</td>
+                <td>
+                    <textarea name="address" rows="4" cols="35"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>City:</td>
+                <td><input type="text" name="city" size="40"></td>
+            </tr>
+
+            <tr>
+                <td>State:</td>
+                <td>
+                    <select name="state">
+                        <option>--Select State--</option>
+                        <option>Andhra Pradesh</option>
+                        <option>Karnataka</option>
+                        <option>Tamil Nadu</option>
+                        <option>Maharashtra</option>
+                        <option>Delhi</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>PIN Code:</td>
+                <td><input type="text" name="pincode" size="40"></td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+
+        </table>
+    </form>
+
+</body>
+</html>
