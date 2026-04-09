@@ -1,0 +1,39 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Promise Example</title>
+</head>
+<body>
+
+<h2>JavaScript Promise Demonstration</h2>
+
+<script>
+
+// Function returning a Promise
+function checkNumber(num) {
+    return new Promise(function(resolve, reject) {
+
+        if (num > 0) {
+            resolve("The number is positive (True)");
+        } else {
+            reject("The number is negative or zero (False)");
+        }
+
+    });
+}
+
+// Calling the Promise
+checkNumber(5)
+.then(function(result) {
+    console.log(result);
+})
+.catch(function(error) {
+    console.log(error);
+});
+
+</script>
+
+</body>
+</html>
+```

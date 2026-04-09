@@ -1,0 +1,38 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Async Await Example</title>
+</head>
+<body>
+
+<h2>Async / Await Demonstration</h2>
+
+<script>
+
+// Function returning a Promise
+function fetchMessage() {
+    return new Promise(function(resolve) {
+        setTimeout(function() {
+            resolve("Data fetched successfully!");
+        }, 2000);
+    });
+}
+
+// Async function
+async function displayMessage() {
+    console.log("Fetching data...");
+
+    let result = await fetchMessage();  // waits for promise
+
+    console.log(result);
+}
+
+// Calling the async function
+displayMessage();
+
+</script>
+
+</body>
+</html>
+```

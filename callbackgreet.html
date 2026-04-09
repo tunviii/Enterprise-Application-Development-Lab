@@ -1,0 +1,32 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Callback Function Example</title>
+</head>
+<body>
+
+<h2>Callback Function with Greet Example</h2>
+
+<script>
+// Greet function that accepts a callback
+function greet(name, callback) {
+    console.log("Hello, " + name + "!");
+    
+    // Calling the callback function
+    callback();
+}
+
+// Callback function
+function sayGoodbye() {
+    console.log("Have a nice day!");
+}
+
+// Calling greet function with callback
+greet("Tanvi", sayGoodbye);
+
+</script>
+
+</body>
+</html>
+```
