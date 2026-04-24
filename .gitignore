@@ -1,0 +1,14 @@
+# Root ignores
+node_modules/
+.env
+
+# Ignore nested project files
+embed-doc/node_modules/
+embed-doc/.env
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
