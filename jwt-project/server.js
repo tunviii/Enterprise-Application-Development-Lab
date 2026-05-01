@@ -46,6 +46,8 @@ const authenticateToken = (req, res, next) => {
   })
 }
 
+
+// POST /login route to authenticate user and issue a JWT token
 app.post('/login', (req, res) => {
   const username = req.body.username // Extract username from request body
   const user = { name: username }    // Create a user payload with the username
@@ -55,12 +57,18 @@ app.post('/login', (req, res) => {
   res.json({ token: accessToken })
 })
 
+
+// Apply authentication middleware to all routes below this line
 app.use(authenticateToken)
 
+
+// GET /posts route - returns posts filtered by authenticated user's name
 app.get('/posts', (req, res) => {
   console.log(req.user.name) // Log the authenticated username
   // Filter posts to only those matching the logged-in user and send JSON response
   res.json(posts.filter(post => post.name === req.user.name))
 })
 
+
+// Start the Express server on port 3000
 app.listen(3000, () => console.log("Server running on port 3000"))
