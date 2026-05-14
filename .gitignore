@@ -5,6 +5,7 @@ node_modules/
 # Ignore nested project files
 embed-doc/node_modules/
 embed-doc/.env
+myreactapp/node_modules
 
 # Logs
 *.log
